@@ -7,10 +7,20 @@ class Array
         dupes_hash.keys
     end
 
-end
+    def two_sum
+        pairs = []
 
+        (0...self.length).each do |j|
+            (j + 1...self.length).each do |i|
+                pairs << [j, i] if self[j] + self[i] == 0
+            end
+        end
 
-def test
-    test
+        pairs
+    end
+
+    def my_transpose
+        
+    end
+
 end
-p [1, 2, 1, 3, 3].my_uniq
