@@ -42,9 +42,10 @@ class Array
         end
         max_days
     end
-     
-
-
+[1]
+[2,2]
+[3,3,3]
+[4,4,4,4]
 end
 
 [0,1,2,3,2,1].stock_picker
