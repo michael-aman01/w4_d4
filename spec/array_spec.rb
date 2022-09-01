@@ -20,4 +20,10 @@ describe Array do
             expect([[0, 1, 2], [3, 4, 5], [6, 7, 8]].my_transpose).to eq([[0, 3, 6], [1, 4, 7], [2, 5, 8]])
         end
     end
+
+    describe "#stock_picker" do
+        it "returns array of 2 elements where value at first position minus value at second position yields greatest difference" do
+            expect([0,1,2,3,2,1].stock_picker).to eq([0,3])
+        end
+    end
 end
