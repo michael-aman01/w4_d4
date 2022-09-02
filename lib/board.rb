@@ -1,7 +1,5 @@
 require 'colorize'
 
-
-
 class Board
     def initialize
         @discs = [Disc.new(:red,1),Disc.new(:yellow,2),Disc.new(:blue,3),Disc.new(:orange,4)]
@@ -13,8 +11,7 @@ class Board
         
         @poles = [@pole_1,@pole_2,@pole_3]
 
-        self.print_board
-    
+        # self.print_board    
     end
 
     def print_board
